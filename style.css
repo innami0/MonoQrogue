@@ -1,0 +1,311 @@
+body{
+            
+    overflow:hidden;
+    margin:0;
+    padding:0;
+    font-family:'Hiragino Kaku Gothic ProN';
+
+}
+p{
+    margin:0
+}
+
+canvas{
+    user-select: none;
+}
+#start{
+    display:block;
+    position:absolute;
+    z-index: 4;
+    height:100vh;
+    width:100vw;
+    text-align: center;
+    background:#666666;
+    transition:all 1s ease
+}
+#start img{
+    height:100%;
+    margin:0 auto;
+}
+
+#pcor{
+    display:block;
+    height: 100vh;
+    background:#666666;
+}
+#about{
+    position:relative;
+    z-index:2;
+    text-align:center;
+    color:white;
+    letter-spacing: 9px;
+    line-height:50px;
+    padding-top:280px;
+}
+#switch {
+    display:flex;
+    width:30%;
+    margin:40px auto;
+    justify-content: space-between;
+}
+#par{
+    text-align: center;
+    cursor:pointer;
+    color:white;
+    transition:all 0.3s ease
+}
+#par:hover{
+    color:#b6b6b6
+}
+#pcor i{
+    font-size:150px;
+}
+#switch p{
+    font-size:20px;
+    margin-top:10px
+}
+#chi{
+    text-align: center;
+    cursor:pointer;
+    color:white;
+    transition:all 0.3s ease
+}
+#chi:hover{
+    color:#b6b6b6
+}
+#pcor img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:500px;
+    z-index:0
+}
+
+@media screen and (max-width: 1300px) {
+    #pcor img{
+        width:400px
+    }
+}
+@media screen and (max-width: 450px) {
+    #pcor img{
+        width:200px
+    }
+    #about{
+        font-size:14px;
+        letter-spacing: 5px;
+        padding-top:160px
+    }
+    #switch{
+        width: 90%;
+    }
+}
+#parent{
+    height: 50vh;
+    background:#666666;
+    text-align:center;
+    display:none;
+    flex-direction: column;
+    padding:25vh 0;
+    justify-content:space-between;
+}
+#player {
+    list-style:none;
+    color:white;
+    border:2px solid white;
+    border-radius:10px;
+    width:400px;
+    margin:0 auto;
+    font-size:30px
+}
+#parent p{
+    color:white;
+    font-size:50px;
+}
+#gamestart{
+    font-size:40px;
+    border-radius:40px;
+    margin:0 auto;
+    width:50%;
+    letter-spacing: 20px;
+    line-height:80px;
+    background:white;
+    font-weight:bold;
+    color:#666666;
+    cursor:pointer;
+    transition:all 0.3s ease
+}
+#gamestart:hover{
+    background:#b6b6b6
+}
+#gamepar{
+    display:none;
+    height:100vh;
+    background:#666666;
+    text-align: center;
+}
+#myCanvas{
+    border:#000000 solid 2px
+}
+#timer{
+    background:white;
+    color:#666666;
+    font-size:25px;
+    width:75px;
+    height:75px;
+    line-height:75px;
+    border-radius:20px;
+    position:absolute;
+    top:20px;
+    left:20px
+}
+#finish{
+    position:absolute;
+    color:white;
+    background: #666666;
+    font-size:60px;
+    width:100%;
+    height:170px;
+    line-height:170px;
+    top:250px;
+    letter-spacing: 30px;
+    opacity:0;
+    transition:all 0.5s ease
+}
+#container{
+    display:none;
+    background:#666666;
+    height:100vh;
+}
+.p2p-data{
+    height:100%;
+    display:flex;
+    flex-flow:column;
+    justify-content: center;
+}
+.p2f{
+    display:flex;
+    text-align:center;
+    height:20%;
+    flex-flow:column;
+    justify-content: space-between;
+}
+#js-remote-id{
+    margin:0 auto;
+    width:70%;
+    height:60px;
+}
+#js-connect-trigger{
+    font-size:30px;
+    color:#666666;
+    background:white;
+    width:70%;
+    margin:0 auto;
+    border-radius:40px;
+    font-weight:bold
+}
+#js-connect-trigger:hover{
+    background:#b6b6b6
+}
+#select{
+    display:none;
+    height:100vh;
+    background:#666666;
+    text-align:center;
+}
+#name{
+    width:70%;
+    height:60px;
+}
+#nametriger{
+    font-size:30px;
+    color:#666666;
+    background:white;
+    width:70%;
+    margin:0 auto;
+    border-radius:40px;
+    font-weight:bold
+}
+#roleLabel{
+    font-size:30px;
+    color:#666666;
+    background:white;
+    width:50%;
+    margin:30px auto;
+    border-radius:40px;
+    font-weight:bold
+}
+.sel_menu{
+    display:flex;
+    width:95%;
+    margin:0 auto;
+    justify-content: space-between;
+    position:absolute;
+    top:270px;
+    left:2.5%
+}
+.sel_menu .fa-solid{
+    background: #000000;
+    color:white;
+    font-size:30px;
+    width:50px;
+    height:50px;
+    text-align: center;
+    line-height:50px;
+    border-radius:30px
+}
+#wait {
+    display:none;
+    height: 100vh;
+    background:#666666;
+    color:white;
+    text-align: center;
+    padding-top:50px;
+}
+#tips{
+    background:white;
+    color:#666666;
+    font-size:25px;
+    width:125px;
+    height:50px;
+    margin:0 auto;
+    line-height:50px;
+    border-radius:30px
+}
+#tips_about{
+    line-height: 60px;
+}
+#defaultCanvas0 {
+    display:none;
+}
+#gameover{
+    background:#666666;
+    height:100vh;
+    color:white;
+    text-align: center;
+    display:none
+}
+#gameover h2{
+    margin:0;
+    font-size:70px;
+    letter-spacing: 30px;
+    line-height:100vh
+}
+#clear{
+    display:none;
+    background:#666666;
+    height:100vh;
+    color:white;
+    text-align: center;
+    padding:100px
+}
+#clear h2{
+    margin:0;
+    font-size:70px
+}
+#results{
+    display:flex;
+    justify-content: space-between;
+    width:65%;
+    margin:100px auto;
+    font-size:20px
+}
